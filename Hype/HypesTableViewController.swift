@@ -22,7 +22,7 @@ class HypesTableViewController: UITableViewController, UITextFieldDelegate {
         refresh.addTarget(self, action: #selector(HypesTableViewController.loadData), forControlEvents: .ValueChanged)
         self.tableView.addSubview(refresh)
         
-        var logo = UIImage(named: "HypeTitle")?.stretchableImageWithLeftCapWidth(0, topCapHeight: 0)
+        let logo = UIImage(named: "HypeTitle")?.stretchableImageWithLeftCapWidth(0, topCapHeight: 0)
 //        let imageView = UIImageView(image:logo)
 //        self.navigationItem.titleView = imageView
         self.navigationController?.navigationBar.setBackgroundImage(logo, forBarMetrics: .Default)
@@ -142,7 +142,7 @@ class HypesTableViewController: UITableViewController, UITextFieldDelegate {
         if let hypeContent = hype["content"] as? String {
             let dateFormat = NSDateFormatter()
             dateFormat.dateFormat = "MM/dd/yyyy"
-            let dateString = dateFormat.stringFromDate(hype.creationDate!)
+            _ = dateFormat.stringFromDate(hype.creationDate!)
             
             cell.textLabel?.text = hypeContent
             cell.detailTextLabel?.text = hype.creationDate?.stringValue()
