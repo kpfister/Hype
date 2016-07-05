@@ -15,6 +15,7 @@
 		75278B841D26D3320089D9AE /* HypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75278B831D26D3320089D9AE /* HypeUITests.swift */; };
 		75D8AA6E1D26DC01004AF5EC /* HypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8AA6D1D26DC01004AF5EC /* HypesTableViewController.swift */; };
 		75D8AA711D26DD17004AF5EC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D8AA701D26DD17004AF5EC /* CloudKit.framework */; };
+		75ECAB0B1D2C506E00DE21C2 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECAB0A1D2C506E00DE21C2 /* DateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		75D8AA6D1D26DC01004AF5EC /* HypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypesTableViewController.swift; sourceTree = "<group>"; };
 		75D8AA6F1D26DC68004AF5EC /* Hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Hype.entitlements; sourceTree = "<group>"; };
 		75D8AA701D26DD17004AF5EC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		75ECAB0A1D2C506E00DE21C2 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				75278B631D26D3320089D9AE /* AppDelegate.swift */,
 				75278B671D26D3320089D9AE /* Main.storyboard */,
 				75D8AA6D1D26DC01004AF5EC /* HypesTableViewController.swift */,
+				75ECAB0A1D2C506E00DE21C2 /* DateHelper.swift */,
 				75278B6A1D26D3320089D9AE /* Assets.xcassets */,
 				75278B6C1D26D3320089D9AE /* LaunchScreen.storyboard */,
 				75278B6F1D26D3320089D9AE /* Info.plist */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75ECAB0B1D2C506E00DE21C2 /* DateHelper.swift in Sources */,
 				75278B641D26D3320089D9AE /* AppDelegate.swift in Sources */,
 				75D8AA6E1D26DC01004AF5EC /* HypesTableViewController.swift in Sources */,
 			);
@@ -342,6 +346,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -388,7 +393,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -428,7 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = Hype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Wolf-s-Head-Labs.Hype";

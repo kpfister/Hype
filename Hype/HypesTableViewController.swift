@@ -22,6 +22,14 @@ class HypesTableViewController: UITableViewController, UITextFieldDelegate {
         refresh.addTarget(self, action: #selector(HypesTableViewController.loadData), forControlEvents: .ValueChanged)
         self.tableView.addSubview(refresh)
         
+        var logo = UIImage(named: "HypeTitle")?.stretchableImageWithLeftCapWidth(0, topCapHeight: 0)
+//        let imageView = UIImageView(image:logo)
+//        self.navigationItem.titleView = imageView
+        self.navigationController?.navigationBar.setBackgroundImage(logo, forBarMetrics: .Default)
+//        let barPosition = UIBarPosition(rawValue: 200)
+//        self.navigationController?.navigationBar.setBackgroundImage(logo, forBarPosition: barPosition!, barMetrics: .Default)
+
+        
         loadData()
         
     }
@@ -137,7 +145,7 @@ class HypesTableViewController: UITableViewController, UITextFieldDelegate {
             let dateString = dateFormat.stringFromDate(hype.creationDate!)
             
             cell.textLabel?.text = hypeContent
-            cell.detailTextLabel?.text = dateString
+            cell.detailTextLabel?.text = hype.creationDate?.stringValue()
         }
         
         return cell

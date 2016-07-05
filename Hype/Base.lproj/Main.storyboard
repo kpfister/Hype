@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Hype-->
+        <!--Hypes Table View Controller-->
         <scene sceneID="3A2-GK-xsS">
             <objects>
                 <tableViewController id="JVE-eM-IZp" customClass="HypesTableViewController" customModule="Hype" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,7 +44,7 @@
                             <outlet property="delegate" destination="JVE-eM-IZp" id="FkH-IC-xB7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Hype" id="Jvm-7a-5K6">
+                    <navigationItem key="navigationItem" id="Jvm-7a-5K6">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="yzb-pz-fVt">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -62,10 +62,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Iv-WL-eID" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ubb-a1-vDi">
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFill" id="ubb-a1-vDi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.076463289558887482" green="0.79497301578521729" blue="0.33448898792266846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
