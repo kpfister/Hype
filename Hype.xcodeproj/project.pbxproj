@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75041AA71D2D6587005953DD /* HypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75041AA61D2D6587005953DD /* HypeController.swift */; };
+		75041AA91D2D65B9005953DD /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75041AA81D2D65B9005953DD /* Hype.swift */; };
 		75278B641D26D3320089D9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75278B631D26D3320089D9AE /* AppDelegate.swift */; };
 		75278B691D26D3320089D9AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75278B671D26D3320089D9AE /* Main.storyboard */; };
 		75278B6B1D26D3320089D9AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75278B6A1D26D3320089D9AE /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75041AA61D2D6587005953DD /* HypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypeController.swift; sourceTree = "<group>"; };
+		75041AA81D2D65B9005953DD /* Hype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
 		75278B601D26D3320089D9AE /* Hype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75278B631D26D3320089D9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75278B681D26D3320089D9AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				75278B631D26D3320089D9AE /* AppDelegate.swift */,
 				75278B671D26D3320089D9AE /* Main.storyboard */,
 				75D8AA6D1D26DC01004AF5EC /* HypesTableViewController.swift */,
+				75041AA61D2D6587005953DD /* HypeController.swift */,
+				75041AA81D2D65B9005953DD /* Hype.swift */,
 				75ECAB0A1D2C506E00DE21C2 /* DateHelper.swift */,
 				75278B6A1D26D3320089D9AE /* Assets.xcassets */,
 				75278B6C1D26D3320089D9AE /* LaunchScreen.storyboard */,
@@ -272,7 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				75ECAB0B1D2C506E00DE21C2 /* DateHelper.swift in Sources */,
+				75041AA71D2D6587005953DD /* HypeController.swift in Sources */,
 				75278B641D26D3320089D9AE /* AppDelegate.swift in Sources */,
+				75041AA91D2D65B9005953DD /* Hype.swift in Sources */,
 				75D8AA6E1D26DC01004AF5EC /* HypesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

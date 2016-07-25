@@ -1,0 +1,11 @@
+
+
+extension Event {
+
+    @NSManaged var eventCreationDate: NSDate?
+    @NSManaged var eventLatitude: NSNumber?
+    @NSManaged var eventLongtitude: NSNumber?
+    @NSManaged var eventSummary: String?
+    @NSManaged var creator: User?
+
+}

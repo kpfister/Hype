@@ -19,7 +19,7 @@ class HypesTableViewController: UITableViewController, UITextFieldDelegate {
         
         refresh = UIRefreshControl()
         refresh.attributedTitle = NSAttributedString(string: "Pull to see new Hype")
-        refresh.addTarget(self, action: #selector(HypesTableViewController.loadData), forControlEvents: .ValueChanged)
+        refresh.addTarget(self, action: #selector(HypeController.sharedInstance.loadData), forControlEvents: .ValueChanged)
         self.tableView.addSubview(refresh)
         
         let logo = UIImage(named: "HypeTitle")?.stretchableImageWithLeftCapWidth(0, topCapHeight: 0)
@@ -29,10 +29,7 @@ class HypesTableViewController: UITableViewController, UITextFieldDelegate {
 //        let barPosition = UIBarPosition(rawValue: 200)
 //        self.navigationController?.navigationBar.setBackgroundImage(logo, forBarPosition: barPosition!, barMetrics: .Default)
 
-        
-        loadData()
-        
-    }
+    
     
     
     // mc
@@ -54,7 +51,7 @@ class HypesTableViewController: UITableViewController, UITextFieldDelegate {
             }
         })
         
-    }
+    
     
     // mc
     @IBAction func addHype(sender: AnyObject) {

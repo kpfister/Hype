@@ -1,0 +1,10 @@
+data - serialize
+
+jsonDictionary = data(serialized) as? [String:AnyObject]
+
+// Now we need the Key. The key get us the value thats inside the dictionary
+
+resultsArray = jsonDictionary["results"] as? [[String:AnyObject]]
+for pokemonDictionary in resultsArray {
+	let name = pokemonDictionary["name"] as? String
+}

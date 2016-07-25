@@ -1,0 +1,46 @@
+Moto-rescue:
+
+Controllers:
+importMapKit
+
+UserModelController
+
+class User {
+
+var userName: String
+var phoneNumber: Sting
+var primaryLocation: String 
+var rangeToTravel: float?
+var rating: This will have a relationship with User
+var summary: [String]
+var image: UIImage
+
+	func createUser (username:String .... ) {
+}
+
+	func updateUser (username: String.....) {
+
+	}
+
+	convenience init(username: String, phoneNumber: String, context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
+        guard let entity = NSEntityDescription.entityForName("User", inManagedObjectContext: context) else {
+            
+            fatalError()
+        }
+        self.init(entity: entity, insertIntoManagedObjectContext: context)
+        self.username = username
+        self.phonenumber = phonenumber
+//         self.recordName = self.nameForManagedObject()
+    }
+    
+    var photo: UIImage? {
+        if let photoData = self.photoData {
+            return UIImage(data: photoData)
+        } else {
+            return nil
+        }
+    }
+    
+//    func matchesSearchTerm(searchTerm: String) -> Bool {
+//        return (self.comments?.array as? [Comment])?.filter({$0.matchesSearchTerm(searchTerm)}).count > 0
+//    }
